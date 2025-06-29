@@ -1,0 +1,47 @@
+/* —— container geral —— */
+.chart, .chart-content, .chart-plot-background {
+    -fx-background-color: transparent;      /* navy bem escuro */
+    -fx-padding: 16;
+}
+
+/* —— grade quase invisível —— */
+.chart-horizontal-grid-lines, .chart-vertical-grid-lines {
+    -fx-stroke: rgba(255,255,255,0.06); /* traço leve-leve */
+}
+
+.chart-plot-background {
+    -fx-background-color: transparent;  /* some com o retângulo branco */
+}
+
+/* —— eixos —— */
+.axis {
+    -fx-tick-label-fill: #9aa4cf;
+    -fx-font-size: 10px;
+    -fx-border-width: 0;                /* tira a moldura */
+}
+.axis .axis-line, .axis .tick-mark {
+    -fx-stroke: rgba(255,255,255,0.15);
+}
+
+/* —— barras de cada série —— */
+.default-color0.chart-bar { -fx-bar-fill: #00c0ff; } /* cyan */
+.default-color1.chart-bar { -fx-bar-fill: #ffc300; } /* yellow */
+.default-color2.chart-bar { -fx-bar-fill: #ff5666; } /* pink, se precisar */
+
+.chart-bar {
+    -fx-bar-gap: 2;     /* espaço entre colunas do mesmo mês */
+    -fx-background-insets: 0,1;  /* sombra fake leve */
+}
+
+/* —— legendas “sparkle” —— */
+.chart-legend {
+    -fx-background-color: transparent;
+}
+.chart-legend-item-symbol {
+    -fx-background-radius: 2;
+    -fx-padding: 4;
+}
+.chart-legend-item {
+    -fx-text-fill: #d6def8;
+    -fx-font-size: 11px;
+}

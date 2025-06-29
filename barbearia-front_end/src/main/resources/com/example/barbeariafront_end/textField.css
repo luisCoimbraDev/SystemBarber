@@ -1,0 +1,4 @@
+.underline-field:focused {
+    -fx-border-color:  linear-gradient(to right,#92DEF3, #4C4CFF);      /* roxo/azul Material, escolha sua cor */
+    -fx-border-width: 0 0 3 0;      /* deixa a linha um tiquinho mais grossa */
+}
