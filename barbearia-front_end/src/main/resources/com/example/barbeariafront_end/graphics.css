@@ -25,7 +25,7 @@
 
 /* —— barras de cada série —— */
 .default-color0.chart-bar { -fx-bar-fill: #00c0ff; } /* cyan */
-.default-color1.chart-bar { -fx-bar-fill: #ffc300; } /* yellow */
+.default-color1.chart-bar { -fx-bar-fill: #ffc300; } /* yoellw */
 .default-color2.chart-bar { -fx-bar-fill: #ff5666; } /* pink, se precisar */
 
 .chart-bar {

@@ -1,38 +1,46 @@
 package com.example.barbeariafront_end.controller;
 
+import java.io.IOException;
+import java.net.URI;
 
+import com.example.barbearia.service.UserSystemService;
+import io.github.palexdev.materialfx.controls.MFXTextField;
+import jakarta.persistence.Entity;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.net.URL;
-import java.util.ResourceBundle;
 
 @Component
-public class LoginController implements Initializable {
+public class LoginController {
 
-    private double x=0 , y=0;
+    @Autowired
+    private UserSystemService userSystemService;
 
     @FXML
-    private AnchorPane sideBar;
+    private MFXTextField mfxUser;
+
+   @FXML
+   private MFXTextField mfxpassword;
+
 
     private Stage stage;
 
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-        sideBar.setOnMousePressed(mouseEvent -> {
-            x = mouseEvent.getX();
-            y = mouseEvent.getY();
-        });
+    public void Login(ActionEvent event){
+        String user = mfxUser.getText().toLowerCase();
+        String password = mfxpassword.getText().toLowerCase();
 
-        sideBar.setOnMouseDragged(mouseEvent -> {
-            stage.setX(mouseEvent.getScreenX() - x);
-            stage.setY(mouseEvent.getScreenY() - y);
-        });
+        if(userSystemService.verifyUser(user,password)){
+            mfxUser.setText("Usuario validado");
+        }else{
+            mfxUser.setText("usuario nao validado");
+        }
+
     }
+
     public void setStage(Stage stage){
         this.stage = stage;
     }

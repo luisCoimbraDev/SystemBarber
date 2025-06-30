@@ -25,18 +25,18 @@ public class HelloApplication extends Application {
         fxmlLoader.setControllerFactory(springContext::getBean);
         Scene scene = new Scene(fxmlLoader.load());
         LoginController controller = fxmlLoader.getController();
-        scene.setFill(Color.TRANSPARENT);
-        stage.initStyle(StageStyle.TRANSPARENT);
-        stage.setScene(scene);
         controller.setStage(stage);
+        stage.setResizable(false);
+        stage.setTitle("Login");
+        stage.setScene(scene);
         stage.show();
     }
 
     @Override
-    @PostConstruct
     public void init() throws Exception {
         springContext = new SpringApplicationBuilder(BarbeariaApplication.class).run();
     }
+
 
     @Override
     public void stop() throws Exception {
