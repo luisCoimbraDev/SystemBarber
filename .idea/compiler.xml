@@ -24,7 +24,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="barbearia" options="-parameters" />
-      <module name="barbearia-front_end" options="-parameters" />
+      <module name="barbearia-front_end" options="-parameters --add-reads com.example.barbeariafront_end=ALL-UNNAMED" />
     </option>
   </component>
 </project>

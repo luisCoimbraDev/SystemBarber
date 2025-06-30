@@ -13,7 +13,7 @@ import java.util.List;
 public class RegistrationPayment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id_payment;
+    private long idpayment;
     @OneToOne
     @JoinColumn(name = "id_agendamento")
     private Agendamento agendamento;

@@ -15,7 +15,7 @@ import java.time.LocalDate;
 public class Barbeiro {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id_Barber;
+    private long idBarber;
     private String nameBarber;
     private String telBarber;
     LocalDate dtContrat;

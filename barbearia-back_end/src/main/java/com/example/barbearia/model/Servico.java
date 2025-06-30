@@ -13,7 +13,7 @@ import lombok.Setter;
 public class Servico {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id_servico;
+    private long idservico;
     private String descService;
     private double valueService;
 

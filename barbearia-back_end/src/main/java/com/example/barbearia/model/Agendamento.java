@@ -14,7 +14,7 @@ import java.util.List;
 public class Agendamento {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id_Agendamento;
+    private long idAgendamento;
     @ManyToOne
     @JoinColumn(name = "id_Barber")
     private Barbeiro barbeiro;

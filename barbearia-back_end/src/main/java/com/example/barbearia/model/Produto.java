@@ -15,7 +15,7 @@ import org.springframework.boot.autoconfigure.web.WebProperties;
 public class Produto {
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
-        private long id_prod;
+        private long idprod;
         private String productName;
         private double priceProduct;
         private int stockProduct;
