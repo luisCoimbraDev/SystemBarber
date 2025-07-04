@@ -1,47 +1,47 @@
-/* —— container geral —— */
-.chart, .chart-content, .chart-plot-background {
-    -fx-background-color: transparent;      /* navy bem escuro */
-    -fx-padding: 16;
+﻿.chart {
+    -fx-background-color: #transparent;
+    -fx-padding: 20;
 }
 
-/* —— grade quase invisível —— */
-.chart-horizontal-grid-lines, .chart-vertical-grid-lines {
-    -fx-stroke: rgba(255,255,255,0.06); /* traço leve-leve */
+.axis-label {
+    -fx-text-fill: #fff;
+}
+
+.chart-title {
+    -fx-text-fill: #fff;
+    -fx-font-size: 16px;
+}
+
+.axis {
+    -fx-tick-label-fill: #ffffff;
+}
+
+.chart-bar {
+    -fx-background-radius: 8px;
+    -fx-background-insets: 0, 1;
+    -fx-padding: 5px;
 }
 
 .chart-plot-background {
-    -fx-background-color: transparent;  /* some com o retângulo branco */
-}
-
-/* —— eixos —— */
-.axis {
-    -fx-tick-label-fill: #9aa4cf;
-    -fx-font-size: 10px;
-    -fx-border-width: 0;                /* tira a moldura */
-}
-.axis .axis-line, .axis .tick-mark {
-    -fx-stroke: rgba(255,255,255,0.15);
-}
-
-/* —— barras de cada série —— */
-.default-color0.chart-bar { -fx-bar-fill: #00c0ff; } /* cyan */
-.default-color1.chart-bar { -fx-bar-fill: #ffc300; } /* yoellw */
-.default-color2.chart-bar { -fx-bar-fill: #ff5666; } /* pink, se precisar */
-
-.chart-bar {
-    -fx-bar-gap: 2;     /* espaço entre colunas do mesmo mês */
-    -fx-background-insets: 0,1;  /* sombra fake leve */
-}
-
-/* —— legendas “sparkle” —— */
-.chart-legend {
     -fx-background-color: transparent;
 }
-.chart-legend-item-symbol {
-    -fx-background-radius: 2;
-    -fx-padding: 4;
+
+.chart-vertical-grid-lines, .chart-horizontal-grid-lines {
+    -fx-stroke: transparent;
 }
-.chart-legend-item {
-    -fx-text-fill: #d6def8;
-    -fx-font-size: 11px;
+
+.chart-content {
+    -fx-background-color: transparent;
+}
+
+.default-color0.chart-bar {
+    -fx-bar-fill: linear-gradient(to top, #535370, #252541);
+}
+
+.tooltip {
+    -fx-background-color: rgba(26, 26, 37, 0.9);
+    -fx-text-fill: #ffffff;
+    -fx-padding: 10px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
 }

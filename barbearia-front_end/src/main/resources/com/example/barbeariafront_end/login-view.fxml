@@ -63,6 +63,10 @@
                   </DropShadow>
                </effect>
             </MFXPasswordField>
+            <TextField fx:id="warpass" editable="false" layoutX="87.0" layoutY="378.0" prefHeight="31.0" prefWidth="207.0" promptText=" " style="-fx-background-color: transparent; -fx-text-fill: #f70c20;">
+               <font>
+                  <Font size="15.0" />
+               </font></TextField>
          </children>
       </AnchorPane>
    </children>

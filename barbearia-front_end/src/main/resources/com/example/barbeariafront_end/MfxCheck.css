@@ -1,0 +1,17 @@
+.mfx-check-list-view .virtual-flow{
+    -fx-background-color: transparent;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 0.5px;
+}
+
+.mfx-check-list-cell {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-border-width: 0px;
+    -fx-background-color: transparent;
+}
+
+.mfx-check-list-cell > .label {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+}

@@ -25,11 +25,4 @@ public class RegistrationPayment {
     private List<Produto> productList;
     private double paymentPrice;
 
-    public void calPaymentPrice(){
-        for(Produto product : productList){
-            paymentPrice+=product.getPriceProduct();
-        }
-        paymentPrice+=agendamento.getTotalPrice();
-    }
-
 }

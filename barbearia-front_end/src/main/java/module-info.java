@@ -24,4 +24,5 @@ open module com.example.barbeariafront_end {
         //opens com.example.barbearia.service to javafx.fxml;
 
 
-    }
+}
+
