@@ -18,4 +18,9 @@ public class ServicoService{
     public List<Servico>getServicos(){
         return servicoRepository.findAll();
     }
+
+    public double getPriceServicos(List<String> servicos){
+        //esse trecho busca por uma lista de serviços no banco de dados e faz um map para double e soma tudo
+        return servicoRepository.findBydescServiceIn(servicos).stream().mapToDouble(ser->ser.getValueService()).sum();
+    }
 }

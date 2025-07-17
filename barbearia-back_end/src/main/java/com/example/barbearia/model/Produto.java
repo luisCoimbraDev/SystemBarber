@@ -1,9 +1,6 @@
 package com.example.barbearia.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.boot.autoconfigure.web.WebProperties;
@@ -16,6 +13,7 @@ public class Produto {
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         private long idprod;
+        @Column(name = "product_name")
         private String productName;
         private double priceProduct;
         private int stockProduct;

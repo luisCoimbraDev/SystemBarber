@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import io.github.palexdev.materialfx.controls.MFXButton?>
-<?import io.github.palexdev.materialfx.controls.MFXCheckListView?>
 <?import io.github.palexdev.materialfx.controls.MFXComboBox?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
@@ -98,14 +98,12 @@
    <center>
       <AnchorPane prefHeight="529.0" prefWidth="720.0" BorderPane.alignment="CENTER">
          <children>
-            <MFXCheckListView fx:id="checklistService" layoutX="119.0" layoutY="86.0" prefHeight="210.0" prefWidth="249.0" styleClass="mfx-check-list-view" stylesheets="@MfxCheck.css" />
-            <MFXCheckListView fx:id="checklistProducts" layoutX="543.0" layoutY="86.0" prefHeight="210.0" prefWidth="249.0" styleClass="mfx-check-list-view" stylesheets="@MfxCheck.css" />
-            <TextField layoutX="202.0" layoutY="52.0" prefHeight="31.0" prefWidth="82.0" style="-fx-background-color: transparent; -fx-text-fill: #FFFFFF;" text="Serviços">
+            <TextField layoutX="121.0" layoutY="58.0" prefHeight="31.0" prefWidth="82.0" style="-fx-background-color: transparent; -fx-text-fill: #FFFFFF;" text="Serviços">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </TextField>
-            <TextField layoutX="624.0" layoutY="52.0" prefHeight="31.0" prefWidth="87.0" style="-fx-background-color: transparent; -fx-text-fill: #FFFFFF;" text="Produtos">
+            <TextField layoutX="417.0" layoutY="65.0" prefHeight="31.0" prefWidth="87.0" style="-fx-background-color: transparent; -fx-text-fill: #FFFFFF;" text="Produtos">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
@@ -140,16 +138,18 @@
                   <Font name="System Bold" size="15.0" />
                </font>
             </TextField>
-            <TextField layoutX="257.0" layoutY="448.0" prefHeight="31.0" prefWidth="54.0" style="-fx-background-color: transparent; -fx-text-fill: #FFFFFF;" text="Total ">
+            <TextField layoutX="108.0" layoutY="542.0" prefHeight="31.0" prefWidth="54.0" style="-fx-background-color: transparent; -fx-text-fill: #FFFFFF;" text="Total ">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </TextField>
-            <TextField fx:id="totalprice" alignment="CENTER" layoutX="237.0" layoutY="488.0" prefHeight="31.0" prefWidth="94.0" style="-fx-background-color: transparent; -fx-text-fill: #FFFFFF;" text="R$ 0,00">
+            <TextField fx:id="totalprice" alignment="CENTER" layoutX="75.0" layoutY="568.0" prefHeight="31.0" prefWidth="118.0" style="-fx-background-color: transparent; -fx-text-fill: #FFFFFF;" text="R$ 0,00">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </TextField>
+            <ListView fx:id="listService" layoutX="47.0" layoutY="109.0" prefHeight="210.0" prefWidth="249.0" stylesheets="@MfxCheck.css" />
+            <ListView fx:id="listProducts" layoutX="336.0" layoutY="109.0" prefHeight="210.0" prefWidth="249.0" stylesheets="@MfxCheck.css" />
          </children></AnchorPane>
    </center>
 </BorderPane>

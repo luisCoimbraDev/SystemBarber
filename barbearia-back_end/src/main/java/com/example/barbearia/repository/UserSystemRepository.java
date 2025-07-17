@@ -10,7 +10,5 @@ import java.util.Optional;
 public interface UserSystemRepository extends JpaRepository<UserSystem, Long> {
     public UserSystem findByloginuser(String login_user);
 
-    public UserSystem findById(long id);
-
 
 }

@@ -2,14 +2,10 @@ package com.example.barbeariafront_end;
 
 import com.example.barbearia.BarbeariaApplication;
 import com.example.barbeariafront_end.controller.LoginController;
-import jakarta.annotation.PostConstruct;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ConfigurableApplicationContext;
 

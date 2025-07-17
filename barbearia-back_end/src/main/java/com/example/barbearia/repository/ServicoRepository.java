@@ -8,5 +8,7 @@ import java.util.List;
 
 @Repository
 public interface ServicoRepository extends JpaRepository<Servico, Long> {
+    public Servico findBydescService(String desc_service);
 
+    List<Servico> findBydescServiceIn(List<String> servicos);
 }

@@ -8,14 +8,14 @@ open module com.example.barbeariafront_end {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires lombok;
-        requires spring.webmvc;
+
         requires spring.context;
         requires spring.boot;
         requires jakarta.annotation;
-        //requires MaterialFX;
     requires jakarta.persistence;
         requires spring.beans;
     requires MaterialFX;
+
     requires javafx.fxml;
     //opens com.example.barbeariafront_end to javafx.fxml;
         //opens com.example.barbeariafront_end.controller to javafx.fxml, spring.core, spring.beans;

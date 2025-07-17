@@ -14,17 +14,11 @@ public class UserSystemService {
 
     public boolean verifyUser(String name, String password){
        UserSystem userSystem  = userSystemRepository.findByloginuser(name);
-       if(userSystem!=null && userSystem.getId()>=0)
-           if (verifyPassword(password, userSystem.getId()))
-           return true;
-       return false;
-    }
+       if(userSystem==null)
+           return false;
+       return userSystem.getPassword().equals(password);
 
-    private boolean verifyPassword(String Password, long id){
-        UserSystem user = userSystemRepository.findById(id);
-        if(Password.equals(user.getPassword()))
-            return true;
-        return false;
+
     }
 
 }

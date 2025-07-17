@@ -1,23 +1,16 @@
 package com.example.barbeariafront_end.controller;
 
-import java.awt.*;
 import java.io.IOException;
-import java.net.URI;
-import java.net.URL;
-import java.util.ResourceBundle;
 
 import com.example.barbearia.service.UserSystemService;
 import com.example.barbeariafront_end.HelloApplication;
 import io.github.palexdev.materialfx.controls.MFXTextField;
-import jakarta.persistence.Entity;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.AnchorPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import org.springframework.beans.factory.annotation.Autowired;
