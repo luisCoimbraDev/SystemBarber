@@ -1,0 +1,39 @@
+.fundo{
+    -fx-background-color: #171d2c;
+}
+
+.cliente-text{
+    -fx-background-color: transparent;
+    -fx-border-wight: 0.8px;
+    -fx-border-color: #FFFFFF;
+    -fx-text-fill: #FFFFFF;
+     -fx-font-family: "Inter 24pt Bold";
+    -fx-font-size: 18px;
+}
+
+.cliente-text .floating-text {
+    -fx-background-color: #171d2c;
+    -fx-text-fill: white;
+    -fx-padding: 0 6 0 6;
+    -fx-font-family: "Inter 24pt Bold";
+    -fx-font-size: 18px;
+}
+
+.title{
+    -fx-font-family: "Inter 24pt Bold";
+    -fx-font-size: 36px;
+    -fx-text-fill: #FFFFFF;
+}
+
+.price-text{
+    -fx-font-family: "Inter 24pt Bold";
+    -fx-font-size: 16px;
+    -fx-text-fill: #FFFFFF;
+
+}
+
+.mfx-title{
+    -fx-font-family: "Inter 24pt Bold";
+    -fx-font-size: 16px;
+    -fx-text-fill: #FFFFFF;
+}

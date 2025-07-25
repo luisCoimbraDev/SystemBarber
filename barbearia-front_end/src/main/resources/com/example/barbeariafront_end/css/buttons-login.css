@@ -1,0 +1,18 @@
+.mfx-button-esc:hover{
+    -fx-background-color: #FFFFFF;
+}
+
+.mfx-text-field .floating-text {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-padding: 0 6 0 6;
+    -fx-font-size: 12px;
+}
+
+
+.mfx-title{
+    -fx-background-color: transparent;
+    -fx-text-fill: #FFFFFF;
+  -fx-font-family: "Inter 24pt Bold";
+  -fx-font-size: 24px;
+}

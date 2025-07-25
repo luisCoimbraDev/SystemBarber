@@ -1,0 +1,9 @@
+.mfx-button:hover {
+    -fx-border-width: 0 0 0.5 0;
+    -fx-border-color: WHITE;
+}
+
+.mfx-button{
+    -fx-background-color: transparent;
+    -fx-text-fill: #FFFFFF;
+}

@@ -1,5 +1,6 @@
 package com.example.barbeariafront_end.controller;
 
+
 import java.io.IOException;
 
 import com.example.barbearia.service.UserSystemService;
@@ -10,6 +11,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -34,7 +36,7 @@ public class LoginController {
    private MFXTextField mfxpassword;
 
    @FXML
-   private TextField warpass;
+   private Label warpass;
 
 
     private Stage stage;
@@ -47,12 +49,12 @@ public class LoginController {
 
 
         if(userSystemService.verifyUser(user,password)){
-            mfxpassword.setStyle("-fx-border-color: none");
-            FXMLLoader fxmlLoader =new FXMLLoader(HelloApplication.class.getResource("Payment-view.fxml"));
+            FXMLLoader fxmlLoader =new FXMLLoader(HelloApplication.class.getResource("Menubar-view.fxml"));
             fxmlLoader.setControllerFactory(springContext::getBean);
             Parent root = fxmlLoader.load();
             Stage stage1 = new Stage();
-            PaymentController paymentController = fxmlLoader.getController();
+            stage1.setMaximized(true);
+            MenuController MenuController = fxmlLoader.getController();
             //DashboardController dashboardController = fxmlLoader.getController();
             Scene scene = new Scene(root);
             stage1.initModality(Modality.APPLICATION_MODAL);
@@ -61,7 +63,7 @@ public class LoginController {
             stage1.show();
         }else{
             mfxpassword.setText("");
-            mfxpassword.setStyle("-fx-border-color: #f70c20");
+            mfxpassword.setStyle("-fx-background-color: transparent");
             warpass.setText("Usuario ou senha incorretos!");
         }
 

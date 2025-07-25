@@ -16,6 +16,7 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.SelectionMode;
 import javafx.scene.control.TextField;
@@ -70,6 +71,7 @@ public class PaymentController implements Initializable {
 
     @FXML
     private MFXComboBox<String> metodopayment;
+
 
     @FXML
     private TextField totalprice;
@@ -155,7 +157,13 @@ public class PaymentController implements Initializable {
 
         double total = servicoService.getPriceServicos(servicos) + produtoService.getValorProdutos(produtos);
 
-        totalprice.setText(String.valueOf(total));
+        totalprice.setText("R$ "+ String.valueOf(total));
+
+    }
+
+
+    public void gerarpayment(){
+
 
     }
 

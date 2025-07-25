@@ -13,7 +13,7 @@
 
 <AnchorPane prefHeight="715.0" prefWidth="1163.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.barbeariafront_end.controller.DashboardController">
    <children>
-      <AnchorPane prefHeight="732.0" prefWidth="1164.0" styleClass="fundo" stylesheets="@telas/home.css">
+      <AnchorPane prefHeight="732.0" prefWidth="1164.0" styleClass="fundo" stylesheets="@css/home.css">
          <children>
             <AnchorPane prefHeight="732.0" prefWidth="174.0" style="-fx-background-color: transparent; -fx-border-color: #FFF; -fx-border-width: 0 0.2 0 0;">
                <children>
@@ -98,7 +98,7 @@
             </TextField>
             <StackPane layoutX="387.0" layoutY="346.0" prefHeight="283.0" prefWidth="472.0" AnchorPane.rightAnchor="257.0" AnchorPane.topAnchor="346.0">
                <children>
-                  <BarChart prefHeight="283.0" prefWidth="399.0" stylesheets="@graphics.css" StackPane.alignment="CENTER">
+                  <BarChart prefHeight="283.0" prefWidth="399.0" stylesheets="@css/graphics.css" StackPane.alignment="CENTER">
                     <xAxis>
                       <CategoryAxis side="BOTTOM" />
                     </xAxis>
